@@ -1,5 +1,11 @@
 const makeChange = (c) => {
   // your name here
+return {
+    q: q,
+    d: d,
+    n: n,
+    p: p
+};
 };
 
 // Do not the change the code below
