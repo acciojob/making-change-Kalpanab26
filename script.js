@@ -1,6 +1,8 @@
+
 const makeChange = (c) => {
-  // your name here
-	 let q = Math.floor(c / 25);
+
+    // Calculate quarters
+    let q = Math.floor(c / 25);
     c = c % 25;
 
     // Calculate dimes
@@ -14,14 +16,15 @@ const makeChange = (c) => {
     // Calculate pennies
     let p = Math.floor(c / 1);
 
-return {
-    q: q,
-    d: d,
-    n: n,
-    p: p
-};
+    // Return the result
+    return {
+        q: q,
+        d: d,
+        n: n,
+        p: p
+    };
 };
 
-// Do not the change the code below
+// Do not change the code below
 const c = prompt("Enter c: ");
 alert(JSON.stringify(makeChange(c)));
